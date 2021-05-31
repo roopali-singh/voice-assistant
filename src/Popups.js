@@ -1,0 +1,140 @@
+import React from "react";
+import "./Popups.css";
+
+function Popups() {
+  return (
+    <div className="popups">
+      {/* POPUP BUTTON 1 */}
+      <a class="button" href="#popup1">
+        Introduction
+      </a>
+
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>Welcome</h2>
+          {/* <hr> */}
+          <a class="close" href="#">
+            &times;
+          </a>
+          <div class="content1 content">
+            This is a (college) project representation by Roopali Singh and
+            Alfia Haider. In this project we have tried to make a Voice
+            Assistant which we named Aether. It was build with ReactJs using the
+            Web Speech Api.
+          </div>
+        </div>
+      </div>
+      {/* POPUP BUTTON 2 */}
+      <a class="button" href="#popup2">
+        Objective
+      </a>
+
+      <div id="popup2" class="overlay">
+        <div class="popup">
+          <h2>Objective</h2>
+          {/* <hr> */}
+          <a class="close" href="#">
+            &times;
+          </a>
+          <div class="content2 content">
+            <h4>
+              To build a personal AI Voice Assistance Program using javascript.
+              It will recognize what you say and answer accordingly.
+            </h4>
+            <ul>
+              <li>It can perform the following tasks : </li>
+              <li>Does Google ,Youtube ,Wikipedia searches.</li>
+              <li>
+                Open websites like Google,Unsplash, Spotify, in a web browser.
+              </li>
+              <li>Sends mail.</li>
+              <li>Tells the current date and time.</li>
+              <li>Also tells the current weather conditions.</li>
+              <li>Plays music.</li>
+              <li>Know the current covid details.</li>
+              <li>Tells you a random qoute.</li>
+              <li>Perform mathematical calculations.</li>
+              <li>You can have a nice conversation with it.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {/* POPUP BUTTON 3 */}
+      <a class="button" href="#popup3">
+        Instructions
+      </a>
+
+      <div id="popup3" class="overlay">
+        <div class="popup">
+          <h2>Instructions</h2>
+          {/* <hr> */}
+          <a class="close" href="#">
+            &times;
+          </a>
+          <div class="content3 content">
+            <ul className="instruction">
+              <h2>Try Saying</h2>
+              <li>Hello</li>
+              <li>What's your name</li>
+              <li>Play Music</li>
+              <li>Stop Music</li>
+              <li>What time is it?</li>
+              <li>What's the date today?</li>
+              <li>What was the day on September 18 1956?</li>
+              <li>Weather in ..Delhi..</li>
+              <li>Send mail with subject *** and content ***</li>
+              <li>Open Google/Youtube/Wikipedia</li>
+              <li>Search ... on G/Y/W..</li>
+              <li>Cube root of 265</li>
+              <li>Coronavirus cases in India/France</li>
+              <li>Vaccines in India/France</li>
+              <li>Tell a random quote</li>
+              <li>Clear</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {/* POPUP BUTTON 4 */}
+      <a class="button" href="#popup4">
+        References
+      </a>
+
+      <div id="popup4" class="overlay links">
+        <div class="popup">
+          <h2>References</h2>
+          {/* <hr> */}
+          <a class="close" href="#">
+            &times;
+          </a>
+          <div class="content4">
+            <ul>
+              <a href="https://reactjs.org/" target="_blank">
+                <li>React</li>
+              </a>
+              <a
+                href="https://www.npmjs.com/package/react-speech-recognition"
+                target="_blank"
+              >
+                <li>react-speech-recognition</li>
+              </a>
+              <a
+                href="https://www.npmjs.com/package/react-speech-kit"
+                target="_blank"
+              >
+                <li>react-speech-kit</li>
+              </a>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+              >
+                <li>JavaScript</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Popups;

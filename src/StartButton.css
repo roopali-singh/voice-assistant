@@ -1,0 +1,55 @@
+.noSupport {
+  color: white;
+}
+
+.button__start {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  overflow: hidden;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 23px;
+  transition: 0.2s;
+  color: #71d2fc;
+  text-shadow: rgb(12, 50, 61) 1px 0 1px;
+  background: transparent;
+  border-width: 0px;
+  border: none;
+  outline: none;
+}
+.button__start:hover {
+  box-shadow: 0 0 10px #71d2fc inset, 0 0 40px#71D2FC, 0 0 80px #71d2fc;
+  background: #71d2fc;
+  color: black;
+  text-shadow: rgb(12, 50, 61) 1px 0 1px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .button__start > span {
+    font-size: 90%;
+    letter-spacing: 2px;
+  }
+
+  .button__start {
+    width: 300px;
+    height: 50px;
+    /* margin-top: -100px; */
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .button__start:hover {
+    border-radius: 20px/50px;
+  }
+}

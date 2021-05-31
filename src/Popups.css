@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap");
+
+.popups {
+  margin: 23px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  font-size: 1em;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #9f4e4e;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #9f4e4e;
+  /* color: #292C43; */
+  color: black;
+  font-weight: bold;
+  box-shadow: black 2px 2px 2px;
+  transform: scale(1.06);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 0.9;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 50px;
+  background: #232a41;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.content {
+  max-height: 700px;
+  overflow: scroll;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.popup h2 {
+  margin-bottom: 30px;
+  color: white;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #184354;
+}
+.popup .close:hover {
+  color: #06d85f;
+}
+
+.popup .content1 {
+  color: white;
+  max-height: 30%;
+  overflow: hidden;
+  font-family: "Andika New Basic", sans-serif;
+  font-size: 19px;
+}
+
+.popup .content2 {
+  color: white;
+  height: max-content;
+  overflow: hidden;
+  font-family: "Andika New Basic", sans-serif;
+  font-size: 16px;
+}
+
+.content2 h4 {
+  margin-bottom: 11px;
+}
+
+.popup .content3 {
+  color: white;
+  height: max-content;
+  overflow: hidden;
+  font-family: "Andika New Basic", sans-serif;
+  font-size: 19px;
+}
+
+.popup .content4 {
+  color: white;
+  height: max-content;
+  overflow: hidden;
+  font-family: "Andika New Basic", sans-serif;
+  font-size: 19px;
+}
+
+.content4 > ul > a {
+  text-decoration: none;
+}
+
+.content4 > ul > a > li {
+  text-decoration: none;
+  color: white;
+}
+
+.content4 > ul > a > li:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    width: 70%;
+  }
+
+  .popup {
+    width: 70%;
+    padding: 20px;
+    margin: 40px auto;
+    font-size: 88%;
+  }
+
+  /* .content2 > h4 {
+    font-size: 88%;
+  }
+
+  .content2 > ul > li {
+    font-size: 88%;
+  }
+  .instruction > h2 {
+    font-size: 88%;
+  }
+
+  .content3 > ul > li {
+    font-size: 88%;
+  } */
+
+  .popups {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

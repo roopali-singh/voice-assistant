@@ -1,0 +1,43 @@
+.middle {
+  margin: 30px;
+  padding-left: 5px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  position: relative;
+  /* top:0; */
+  /* left: 0; */
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  /* background-color: rgb(7, 77, 107); */
+  border: 5px solid #fff;
+  border-radius: 50%;
+  animation: size 2s ease infinite;
+}
+@keyframes size {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    width: 25px;
+    height: 25px;
+  }
+  100% {
+    width: 0px;
+    height: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .circle {
+    display: none;
+  }
+  .middle {
+    display: none;
+  }
+}

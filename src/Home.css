@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
+
+.home {
+  background-image: url("https://images.unsplash.com/photo-1526797793172-d02cad9bd77a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: multiply;
+  overflow-x: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+.home__main {
+  display: flex;
+  min-height: 100vh;
+}
+
+.home__main1 {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__heading {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  color: white;
+  font-size: 111px;
+  font-family: "Teko", sans-serif;
+  text-shadow: rgb(26, 25, 25) 1px 0 5px;
+}
+.home__button {
+  margin-top: 30px;
+}
+
+.home__main2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-top: 80px; */
+  margin-right: 20px;
+  opacity: 0.7;
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .home__heading {
+    font-size: 50px;
+    margin-top: -30px;
+    /* text-align: center; */
+  }
+
+  .home__main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home__main1 {
+    flex: 1;
+  }
+
+  .home__main2 {
+    margin-right: 0px;
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+
+    /* margin-top: -430px; */
+  }
+}

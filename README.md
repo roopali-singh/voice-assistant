@@ -28,10 +28,10 @@ It will recognize what you say and answer accordingly.
 - What was the day on **_September 18 1956_**?
 - Weather in _**..Delhi..**_
 - Send mail with subject ***_subject line_*** and content ***_content line_***
-- Open _Google/Youtube/Wikipedia_
+- Open _**Google/Youtube/Wikipedia**_
 - Search _**.butterflies.**_ on **_G/Y/W_**.
 - Cube root of **_265_**
-- _55_ multiply by _43_ 
+- _**55**_ multiply by _**43**_ 
 - Coronavirus cases in _**India/France**_
 - Vaccines in _**India/Australia**_
 - Tell a random quote

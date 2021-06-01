@@ -1,4 +1,4 @@
-#Voice Assistant: Aether
+# Voice Assistant: Aether
 
 https://the-aether.netlify.app/
 
@@ -17,25 +17,25 @@ https://the-aether.netlify.app/
 9) Perform mathematical calculations.
 10) You can have a nice conversation with it.
 
-##Try Saying:
+## Try Saying:
 
-> -Hello
-> -What's your name
-> -Play Music
-> -Stop Music
-> -What time is it?
-> -What's the date today?
-> -What was the day on _September 18 1956_?
-> -Weather in _..Delhi.._
-> -Send mail with subject *_subject line_* and content *_content line_*
-> -Open _Google/Youtube/Wikipedia_
-> -Search _.butterflies._ on _G/Y/W_..
-> -Cube root of _265_
-> -_55_ multiply by _43_ 
-> -Coronavirus cases in _India/France_
-> -Vaccines in _India/France_
-> -Tell a random quote
-> -Clear
+- Hello
+- What's your name
+- Play Music
+- Stop Music
+- What time is it?
+- What's the date today?
+- What was the day on _September 18 1956_?
+- Weather in _..Delhi.._
+- Send mail with subject *_subject line_* and content *_content line_*
+- Open _Google/Youtube/Wikipedia_
+- Search _.butterflies._ on _G/Y/W_..
+- Cube root of _265_
+- _55_ multiply by _43_ 
+- Coronavirus cases in _India/France_
+- Vaccines in _India/France_
+- Tell a random quote
+- Clear
 
 
 

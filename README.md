@@ -2,7 +2,7 @@
 
 https://the-aether.netlify.app/
 
-**Aim:** To build a personal AI Voice Assistance Program using javascript. It will recognize what you say and answer accordingly.
+It will recognize what you say and answer accordingly.
 
 **It can perform the following tasks :**
 

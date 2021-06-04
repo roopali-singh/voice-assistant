@@ -764,18 +764,6 @@ function Output() {
       },
     },
 
-    // {                            //  LATEST NEWS HEADLINES
-    //   command: "What's the latest headlines",
-    //   callback: () => {
-    //     resetTranscript();
-    //     setMessage(
-    //       <a href="news">Here's what's going on in your country</a>
-    //     );
-
-    //     console.log(message);
-    //     // say();
-    //   },
-    // },
     {
       // CLEAR or STOP.
       command: "clear",
@@ -786,67 +774,6 @@ function Output() {
       isFuzzyMatch: true,
       fuzzyMatchingThreshold: 0.2,
     },
-
-    // {
-    //   command:
-    //     "Play * (by) (Niall Horan) (Taylor Swift) (Jasleen Royal) (One Direction) (Lord Huron) (Imagine Dragons) (Kodaline) (Ritviz) (Jay Sean) (Linkin Park) (Anne-Marie) (Selena Gomez) (Miley Cyrus) (and The Scene) (The Scene)",
-    //   callback: (chosen) => {
-    //     resetTranscript();
-    //     function chooseSong(chosen) {
-    //       if (chosen === "Slow hands") {
-    //         nextSong = "/MusicPlaylist/1.mp3";
-    //       } else if (chosen === "mine") {
-    //         nextSong = "/MusicPlaylist/2.mp3";
-    //       } else if (chosen === "nit nit") {
-    //         nextSong = "/MusicPlaylist/3.mp3";
-    //       } else if (chosen === "ours") {
-    //         nextSong = "/MusicPlaylist/4.mp3";
-    //       } else if (chosen === "night changes") {
-    //         nextSong = "/MusicPlaylist/5.mp3";
-    //       } else if (chosen === "history") {
-    //         nextSong = "/MusicPlaylist/6.mp3";
-    //       } else if (chosen === "one thing") {
-    //         nextSong = "/MusicPlaylist/7.mp3";
-    //       } else if (chosen === "this town") {
-    //         nextSong = "/MusicPlaylist/8.mp3";
-    //       } else if (chosen === "the night we met") {
-    //         nextSong = "/MusicPlaylist/9.mp3";
-    //       } else if (chosen === "Not today") {
-    //         nextSong = "/MusicPlaylist/10.mp3";
-    //       } else if (chosen === "bad liar") {
-    //         nextSong = "/MusicPlaylist/11.mp3";
-    //       } else if (chosen === "all i want") {
-    //         nextSong = "/MusicPlaylist/12.mp3";
-    //       } else if (chosen === "udd gaye") {
-    //         nextSong = "/MusicPlaylist/13.mp3";
-    //       } else if (chosen === "war") {
-    //         nextSong = "/MusicPlaylist/14.mp3";
-    //       } else if (chosen === "in the end") {
-    //         nextSong = "/MusicPlaylist/15.mp3";
-    //       } else if (chosen === "2002" || "two thousand two") {
-    //         nextSong = "/MusicPlaylist/16.mp3";
-    //       } else if (chosen === "who says") {
-    //         nextSong = "/MusicPlaylist/17.mp3";
-    //       } else if (chosen === "party in the USA") {
-    //         nextSong = "/MusicPlaylist/18.mp3";
-    //       }
-
-    //       audioPlayer.src = nextSong;
-    //       toPlayMusic();
-    //     }
-    //     chooseSong();
-    //     setMessage(`Playing ${chosen}`);
-    //   },
-    // },
-
-    // {
-    //   // CLEAR or STOP.
-    //   command: "stop",
-    //   callback: () => {
-    //     SpeechRecognition.abortListening();
-    //   },
-    //   matchInterim: true,
-    // },
   ];
 
   // MUSIC FUNCTIONS DEFINED

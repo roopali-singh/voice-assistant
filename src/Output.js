@@ -633,7 +633,7 @@ function Output() {
       callback: (city) => {
         resetTranscript();
         fetch(
-          `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=80334aad6f25b66d22605bc6cadd0e4b`
+          `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=YOUR_tOKEN`
         )
           .then((response) => response.json())
           .then((data) => {

@@ -1,6 +1,4 @@
-# Voice Assistant: Aether
-
-https://the-aether.netlify.app/
+# Live Demo: [Voice Assistant: Aether](https://the-aether.netlify.app/)
 
 It will recognize what you say and answer accordingly.
 
@@ -37,7 +35,7 @@ It will recognize what you say and answer accordingly.
 - Tell a random quote
 - Clear
 
-
+> Hosted on Heroku
 
 # Getting Started with Create React App
 

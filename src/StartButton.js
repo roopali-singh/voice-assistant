@@ -3,11 +3,12 @@ import "./StartButton.css";
 import SpeechRecognition from "react-speech-recognition";
 
 function StartButton() {
-  const [listen, setListen] = useState("");
+  const [listen, setListen] = useState(false);
 
   const strListen = () => {
     if (listen === false) {
       SpeechRecognition.startListening({ continuous: true });
+      // startOsc();
       setListen(true);
     } else {
       SpeechRecognition.abortListening();
@@ -16,7 +17,11 @@ function StartButton() {
   };
 
   if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
-    return <div className="noSupport">Browser does not support Web Speech API. Please download latest Chrome.</div>;
+    return (
+      <div className="noSupport">
+        Browser does not support Web Speech API. Please download latest Chrome.
+      </div>
+    );
   }
 
   return (

@@ -5,8 +5,6 @@ import SpeechRecognition, {
 import { useSpeechSynthesis } from "react-speech-kit";
 import "./Output.css";
 import random from "utils.random";
-// import { getWeather } from "./Weather";
-// import News from "./News";
 
 function Output() {
   const [message, setMessage] = useState("");
@@ -633,7 +631,7 @@ function Output() {
       callback: (city) => {
         resetTranscript();
         fetch(
-          `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=YOUR_tOKEN`
+          `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=80334aad6f25b66d22605bc6cadd0e4b`
         )
           .then((response) => response.json())
           .then((data) => {
@@ -763,7 +761,6 @@ function Output() {
         console.log(message);
       },
     },
-
     {
       // CLEAR or STOP.
       command: "clear",
@@ -774,6 +771,14 @@ function Output() {
       isFuzzyMatch: true,
       fuzzyMatchingThreshold: 0.2,
     },
+    // {
+    //   // CLEAR or STOP.
+    //   command: "stop",
+    //   callback: () => {
+    //     SpeechRecognition.abortListening();
+    //   },
+    //   matchInterim: true,
+    // },
   ];
 
   // MUSIC FUNCTIONS DEFINED
@@ -788,22 +793,11 @@ function Output() {
   }
 
   //MUSIC PLAYER
-  // var source = random(1, 18);
 
   var i = 1;
   var nextSong = "";
   function playMusic() {
-    // if (i == files.length - 1) {
-    //   i = 0;
-    //   audioPlayer.src = files[i];
-    //   audioPlayer.load();
-    //   audioPlayer.play();
-    // } else {
     i++;
-    //   audioPlayer.src = files[i];
-    //   audioPlayer.load();
-    //   audioPlayer.play();
-    // }
     nextSong = "/MusicPlaylist/" + i + ".mp3";
     // audioPlayer = document.getElementById("audio");
     audioPlayer.src = nextSong;

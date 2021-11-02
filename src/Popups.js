@@ -5,18 +5,18 @@ function Popups() {
   return (
     <div className="popups">
       {/* POPUP BUTTON 1 */}
-      <a class="button" href="#popup1">
+      <a className="button" href="#popup1">
         Introduction
       </a>
 
-      <div id="popup1" class="overlay">
-        <div class="popup">
+      <div id="popup1" className="overlay">
+        <div className="popup">
           <h2>Welcome</h2>
           {/* <hr> */}
-          <a class="close" href="#">
+          <a className="close" href="#">  
             &times;
           </a>
-          <div class="content1 content">
+          <div className="content1 content">
             This is a (college) project representation by Roopali Singh and
             Alfia Haider. In this project we have tried to make a Voice
             Assistant which we named Aether. It was build with ReactJs using the
@@ -25,18 +25,18 @@ function Popups() {
         </div>
       </div>
       {/* POPUP BUTTON 2 */}
-      <a class="button" href="#popup2">
+      <a className="button" href="#popup2">
         Objective
       </a>
 
-      <div id="popup2" class="overlay">
-        <div class="popup">
+      <div id="popup2" className="overlay">
+        <div className="popup">
           <h2>Objective</h2>
           {/* <hr> */}
-          <a class="close" href="#">
+          <a className="close" href="#">
             &times;
           </a>
-          <div class="content2 content">
+          <div className="content2 content">
             <h4>
               To build a personal AI Voice Assistance Program using javascript.
               It will recognize what you say and answer accordingly.
@@ -60,18 +60,18 @@ function Popups() {
         </div>
       </div>
       {/* POPUP BUTTON 3 */}
-      <a class="button" href="#popup3">
+      <a className="button" href="#popup3">
         Instructions
       </a>
 
-      <div id="popup3" class="overlay">
-        <div class="popup">
+      <div id="popup3" className="overlay">
+        <div className="popup">
           <h2>Instructions</h2>
           {/* <hr> */}
-          <a class="close" href="#">
+          <a className="close" href="#">
             &times;
           </a>
-          <div class="content3 content">
+          <div className="content3 content">
             <ul className="instruction">
               <h2>Try Saying</h2>
               <li>Hello</li>
@@ -95,37 +95,40 @@ function Popups() {
         </div>
       </div>
       {/* POPUP BUTTON 4 */}
-      <a class="button" href="#popup4">
+      <a className="button" href="#popup4">
         References
       </a>
 
-      <div id="popup4" class="overlay links">
-        <div class="popup">
+      <div id="popup4" className="overlay links">
+        <div className="popup">
           <h2>References</h2>
           {/* <hr> */}
-          <a class="close" href="#">
+          <a className="close" href="#">
             &times;
           </a>
-          <div class="content4">
+          <div className="content4">
             <ul>
-              <a href="https://reactjs.org/" target="_blank">
+              <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
                 <li>React</li>
               </a>
               <a
                 href="https://www.npmjs.com/package/react-speech-recognition"
                 target="_blank"
+                rel="noreferrer"
               >
                 <li>react-speech-recognition</li>
               </a>
               <a
                 href="https://www.npmjs.com/package/react-speech-kit"
                 target="_blank"
+                rel="noreferrer"
               >
                 <li>react-speech-kit</li>
               </a>
               <a
                 href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 target="_blank"
+                rel="noreferrer"
               >
                 <li>JavaScript</li>
               </a>

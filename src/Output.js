@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
-import SpeechRecognition, {
-  useSpeechRecognition,
-} from "react-speech-recognition";
+import { useSpeechRecognition } from "react-speech-recognition";
 import { useSpeechSynthesis } from "react-speech-kit";
 import "./Output.css";
 import random from "utils.random";
 
 function Output() {
   const [message, setMessage] = useState("");
-  const { speak, cancel, speaking, supported, voices } = useSpeechSynthesis();
+  const { speak, cancel, supported } = useSpeechSynthesis();
 
   useEffect(() => {
     if (supported == false) {
@@ -23,9 +21,6 @@ function Output() {
         voiceURI: "Microsoft Zira Desktop - English (United States)",
       });
     }
-    console.log(message);
-    console.log(speaking);
-    console.table(voices);
   }, [message]);
 
   // function say() {
@@ -42,9 +37,6 @@ function Output() {
         // const word = ["Hi", `${name}`, `Hello ${name}`];
         setMessage(`Hi ${name}. How you land up here?`);
         // setMessage(random(word));
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -52,9 +44,6 @@ function Output() {
       callback: (name) => {
         resetTranscript();
         setMessage(`Hi ${name}. Nice name`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -63,9 +52,6 @@ function Output() {
         resetTranscript();
         const words = ["Hi", "Hello", "Bonjour"];
         setMessage(random(words));
-
-        console.log(message);
-        // say();
       },
       matchInterim: true,
     },
@@ -74,9 +60,6 @@ function Output() {
       callback: () => {
         resetTranscript();
         setMessage("My name's Aether");
-
-        console.log(message);
-        // say();
       },
       matchInterim: true,
     },
@@ -85,9 +68,6 @@ function Output() {
       callback: () => {
         resetTranscript();
         setMessage("I'm your voice assistant");
-
-        console.log(message);
-        // say();
       },
       matchInterim: true,
     },
@@ -97,9 +77,6 @@ function Output() {
       callback: () => {
         resetTranscript();
         setMessage("Need something else..");
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -107,9 +84,6 @@ function Output() {
       callback: () => {
         resetTranscript();
         setMessage("Glad that you like it.");
-
-        console.log(message);
-        // say();
       },
       matchInterim: true,
     },
@@ -118,9 +92,6 @@ function Output() {
       callback: () => {
         resetTranscript();
         setMessage("My Pleasure");
-
-        console.log(message);
-        // say();
       },
       matchInterim: true,
     },
@@ -130,9 +101,6 @@ function Output() {
       callback: () => {
         resetTranscript();
         setMessage(new Date().toLocaleTimeString());
-
-        console.log(message);
-        // say();
       },
       matchInterim: true,
     },
@@ -141,9 +109,6 @@ function Output() {
       callback: () => {
         resetTranscript();
         setMessage(new Date().toLocaleDateString());
-
-        console.log(message);
-        // say();
       },
       matchInterim: true,
     },
@@ -158,9 +123,6 @@ function Output() {
         day = new Intl.DateTimeFormat("en-US", options).format(thatDay);
         let timeline = thatDay < new Date() ? "was" : "will be";
         setMessage(`On ${date}, it ${timeline} ${day}`);
-
-        console.log(message);
-        // say();
       },
       // matchInterim: true,
     },
@@ -174,10 +136,6 @@ function Output() {
         today.setMinutes(`${minute}`);
         setMessage(`Setting alarm for ${today}`);
 
-        console.log(message);
-        // say();
-        console.log(today);
-
         var ring = new Audio(
           "https://imagesforwebsite.netlify.app/MusicPlaylist/1.mp3"
         );
@@ -190,11 +148,8 @@ function Output() {
           // e.preventDefault();
           let alarmTime = new Date(`${today}`);
           let now = new Date();
-          console.log(now);
-          console.log(alarmTime);
 
           let timeToAlarm = alarmTime - now;
-          console.log(timeToAlarm);
           if (timeToAlarm >= 0) {
             setTimeout(() => {
               ringBell();
@@ -212,9 +167,6 @@ function Output() {
         resetTranscript();
         toPlayMusic();
         setMessage("Enjoy");
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -223,9 +175,6 @@ function Output() {
         resetTranscript();
         toStopMusic();
         setMessage("Your Wish");
-
-        console.log(message);
-        // say();
       },
       isFuzzyMatch: true,
       fuzzyMatchingThreshold: 0.8,
@@ -257,9 +206,6 @@ function Output() {
             <li>Party In The U.S.A. by Miley Cyrus</li>
           </ul>
         );
-
-        console.log(message);
-        // say();
       },
     },
 
@@ -273,9 +219,6 @@ function Output() {
         }
         openGoogle();
         setMessage("Go Google!");
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -287,9 +230,6 @@ function Output() {
         }
         openYoutube();
         setMessage("Go Youtube!");
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -301,9 +241,6 @@ function Output() {
         }
         openWikipedia();
         setMessage("Go Wikipedia!");
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -315,9 +252,6 @@ function Output() {
         }
         openWikipedia();
         setMessage("Go Spotify!");
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -329,9 +263,6 @@ function Output() {
         }
         openGmail();
         setMessage("Here you go !");
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -343,9 +274,6 @@ function Output() {
         }
         openGoogleAccount();
         setMessage("ok");
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -358,9 +286,6 @@ function Output() {
         }
         toGoogle();
         setMessage(`Okay. Googling ${gitem}`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -372,9 +297,6 @@ function Output() {
         }
         toGoogle();
         setMessage(`Okay. Googling ${gitem}`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -389,9 +311,6 @@ function Output() {
         }
         toYoutube();
         setMessage(`${yitem}. Here you go.`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -403,9 +322,6 @@ function Output() {
         }
         toWiki();
         setMessage(`Searching ${witem} on Wiki`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -417,9 +333,6 @@ function Output() {
         }
         toWiki();
         setMessage(`Okay`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -431,9 +344,6 @@ function Output() {
         }
         toWiki();
         setMessage(`Searching ${witem} on Wiki`);
-
-        console.log(message);
-        // say();
       },
     },
     // FOR UNSPLASH IMAGES
@@ -446,9 +356,6 @@ function Output() {
         }
         toUnsplash();
         setMessage(`Images for ${image}`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -459,9 +366,6 @@ function Output() {
         const num1 = parseInt(numa, 10);
         const num2 = parseInt(numb, 10);
         setMessage(`The answer is: ${num1 + num2}`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -471,9 +375,6 @@ function Output() {
         const num1 = parseInt(numa, 10);
         const num2 = parseInt(numb, 10);
         setMessage(`The answer is: ${num1 + num2}`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -483,9 +384,6 @@ function Output() {
         const num1 = parseInt(numa, 10);
         const num2 = parseInt(numb, 10);
         setMessage(`The answer is: ${num1 + num2}`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -495,9 +393,6 @@ function Output() {
         const num1 = parseInt(numa, 10);
         const num2 = parseInt(numb, 10);
         setMessage(`The answer is: ${num1 - num2}`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -507,9 +402,6 @@ function Output() {
         const num1 = parseInt(numa, 10);
         const num2 = parseInt(numb, 10);
         setMessage(`The answer is: ${num1 - num2}`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -519,9 +411,6 @@ function Output() {
         const num1 = parseInt(numa, 10);
         const num2 = parseInt(numb, 10);
         setMessage(`The answer is: ${num1 / num2}`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -532,9 +421,6 @@ function Output() {
         const num2 = parseInt(numb, 10);
         let divide = num1 / num2;
         setMessage(`The answer is: ${divide.toFixed(3)}`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -544,9 +430,6 @@ function Output() {
         const num1 = parseInt(numa, 10);
         const num2 = parseInt(numb, 10);
         setMessage(`The answer is: ${num1 * num2}`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -557,9 +440,6 @@ function Output() {
         const num2 = parseInt(numb, 10);
 
         setMessage(`The answer is: ${num1 * num2}`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -569,9 +449,6 @@ function Output() {
         const num1 = parseInt(numa, 10);
         const num2 = parseInt(numb, 10);
         setMessage(`The answer is: ${num1 * num2}`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -580,9 +457,6 @@ function Output() {
       callback: (num) => {
         resetTranscript();
         setMessage(`The answer is: ${Math.sqrt(num).toFixed(3)}`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -590,9 +464,6 @@ function Output() {
       callback: (num) => {
         resetTranscript();
         setMessage(`The answer is: ${Math.cbrt(num).toFixed(3)}`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -600,9 +471,6 @@ function Output() {
       callback: (x, y) => {
         resetTranscript();
         setMessage(`The answer is: ${Math.pow(x, y)}`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -610,9 +478,6 @@ function Output() {
       callback: (x, y) => {
         resetTranscript();
         setMessage(`The answer is: ${Math.pow(x, y)}`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -620,9 +485,6 @@ function Output() {
       callback: () => {
         resetTranscript();
         setMessage(`${Math.random().toFixed(3)} is a nice number`);
-
-        console.log(message);
-        // say();
       },
     },
     {
@@ -749,7 +611,6 @@ function Output() {
       callback: (subject, content) => {
         resetTranscript();
         function toMail() {
-          // let eAddress = address.replace("dot", ".");
           window.open(
             `https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=${subject}&body=${content}`,
             "_blank"
@@ -757,8 +618,6 @@ function Output() {
         }
         toMail();
         setMessage(`${subject}. Here you go.`);
-
-        console.log(message);
       },
     },
     {

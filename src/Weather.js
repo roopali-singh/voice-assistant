@@ -14,7 +14,6 @@ export function getWeather(city) {
     const { name } = data;
     const { description } = data.weather[0];
     const { temp } = data.main;
-    console.log(name, description, temp);
     return { temp };
     // return (
     // `In ${name} it's currently ${temp} with ${description} there`

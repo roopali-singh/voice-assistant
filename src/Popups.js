@@ -13,13 +13,12 @@ function Popups() {
         <div className="popup">
           <h2>Welcome</h2>
           {/* <hr> */}
-          <a className="close" href="#">  
+          <a className="close" href="#">
             &times;
           </a>
           <div className="content1 content">
-            This is a (college) project representation by Roopali Singh and
-            Alfia Haider. In this project we have tried to make a Voice
-            Assistant which we named Aether. It was build with ReactJs using the
+            This project is an attempt to make a Voice
+            Assistant baptized as Aether. It was build with ReactJs using the
             Web Speech Api.
           </div>
         </div>

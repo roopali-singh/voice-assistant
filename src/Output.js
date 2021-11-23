@@ -186,14 +186,15 @@ function Output() {
 
         setMessage(
           <ul>
-            <li>Slow Hands by Niall Horan</li>
-            <li>Mine by Taylor Swift</li>
-            <li>Nit Nit by Jasleen Royal</li>
+            <li>Come 2gether by Ooyy</li>
+            <li>Thunderbird by Ooyy</li>
+            <li>Love Me Back by Mondays</li>
             <li>Ours by Taylor Swift</li>
-            <li>Night Changes by One Direction</li>
-            <li>History by One Direction</li>
-            <li>One Thing by One Direction</li>
-            <li>This Town by Niall Horan</li>
+            <li>Fairy Lights by The Waiting World</li>
+            <li>I Am Falling For You by Loving Caliber</li>
+            <li>Dream by Niladri Kumar</li>
+            <li>Photograph by Ed Sheeran</li>
+            <li>Thinking Out Loud by Ed Sheeran</li>
             <li>The Night We Met by Lord Huron</li>
             <li>Not Today by Imagine Dragons</li>
             <li>Bad Liar by Imagine Dragons</li>
@@ -202,7 +203,7 @@ function Output() {
             <li>War by Jay Sean</li>
             <li>In The End by Linkin Park</li>
             <li>2002 by Anne-Marie</li>
-            <li>Who Says by Selena Gomez & The Scene</li>
+            <li>Who Says by Selena Gomez</li>
             <li>Party In The U.S.A. by Miley Cyrus</li>
           </ul>
         );
@@ -493,7 +494,7 @@ function Output() {
       callback: (city) => {
         resetTranscript();
         fetch(
-          `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=YOUR_API_KEY`
+          `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=80334aad6f25b66d22605bc6cadd0e4b`
         )
           .then((response) => response.json())
           .then((data) => {

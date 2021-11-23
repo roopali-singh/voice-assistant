@@ -17,9 +17,8 @@ function Popups() {
             &times;
           </a>
           <div className="content1 content">
-            This project is an attempt to make a Voice
-            Assistant baptized as Aether. It was build with ReactJs using the
-            Web Speech Api.
+            This project is an attempt to make a Voice Assistant baptized as
+            Aether. It was build with ReactJs using the Web Speech Api.
           </div>
         </div>
       </div>

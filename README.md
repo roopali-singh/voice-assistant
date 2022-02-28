@@ -1,4 +1,4 @@
-# Live Demo: [Voice Assistant: Iris](https://the-aether.netlify.app/)
+# Live Demo: [Voice Assistant: Aether](https://the-aether.netlify.app/)
 
 It will recognize what you say and answer accordingly.
 
